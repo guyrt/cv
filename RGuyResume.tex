@@ -1,0 +1,318 @@
+% cv-us.tex
+% $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $
+%
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2006 Jason Blevins
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents, however, I do ask that you
+% please leave this notice and the above URL in the source code if you
+% choose to redistribute this file.
+%
+% Jason R. Blevins <jrblevin@sdf.lonestar.org>
+% http://jrblevin.freeshell.org
+% Durham, December 12, 2006
+%
+%%---------------------------------------------------------------------------%
+%
+% Notes:
+%
+% * Don't forget to change `pdfauthor' and `keywords' in the \hypersetup
+%   section below.
+%
+% * To create a new page use: \newpage \opening
+%
+% * res.cls includes an \address{} command which can be used up to twice,
+%   but my address is too long for the format it uses.
+%
+% * Alternate documentclass statement to put headings in margin:
+%   \documentclass[margin,line,11pt,final]{res}
+%
+% * Can divide publication/presentation list into subsections by year:
+%   \section{\bf\small\hspace{8mm}2006}
+%
+%%----------------------------------------------------------------------------%
+
+\documentclass[overlapped,line,letterpaper]{res}
+
+\usepackage{ifpdf}
+
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+
+\hypersetup{
+  letterpaper,
+  colorlinks,
+  urlcolor=black,
+  pdfpagemode=none,
+  pdftitle={Curriculum Vitae},
+  pdfauthor={Richard T. Guy},
+  pdfcreator={$ $Id: RGuyResume.tex,v 1.28 2006/12/12 22:53:52 rguy Exp $ $},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={}
+}
+
+%%===========================================================================%%
+
+\begin{document}
+
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{0em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+\renewcommand{\namefont}{\large\textbf}
+
+%---------------------------------------------------------------------------
+
+\name{Richard T. Guy}
+
+\begin{resume}
+
+\begin{ncolumn}{2}
+  Department of Computer Science       & Skype: richard.t.guy \\
+  Bahen Center                  & {\tt guy@cs.toronto.edu} \\
+  University of Toronto & {\tt http://www.cs.toronto.edu/$\sim$guy} \\
+  Toronto, ON, Canada      & \\
+\end{ncolumn}
+
+%---------------------------------------------------------------------------
+
+\section{\bf Education}
+Ph.D. Student (on leave) in Computer Science, University of Toronto
+
+M.S. Computer Science, Wake Forest University, 2010 \\
+\indent Master's Thesis: {\it Machine Learning for Biostatisticians: A Hypothesis Driven Approach}
+
+M.A. Mathematics, Wake Forest University, 2009 \\
+\indent Master's Thesis: {\it Some new results on Composition-Delay Equations with Asymptotically Periodic Solutions}
+
+B.A. Mathematics, Philosophy and Religion, Appalachian State University, 2007,
+{\it Summa Cum Laude} \\ Minor: Computer Science \\
+\indent Honors Thesis: {\it Diagonalization and the Liar}
+
+%---------------------------------------------------------------------------
+
+\section{\bf Honors and Awards}
+\begin{itemize}
+\item Winner of the 2009 Gordon A. Melson Outstanding Master's Student Award.
+\item Winner of ``Best Poster Award" at the Graduate Research Day Poster Session, Wake Forest University, April, 2009.
+\item Runner up for best poster at the Graduate Research Day Poster Session, Wake Forest University, April, 2010.
+\item Uplison Pi Epsilon inductee.
+\item Pi Mu Epsilon inductee.
+\item Graduating Class Representative and podium speaker for May Commencement, 2007, Appalachian State University
+\item Chancellor's List (GPA $>$ 3.85) every semester at Appalachian State University
+\item Academic Excellence Award, 2006, 2007, Appalachian State University
+\item Outstanding Senior Award, Department of Philosophy and Religion, Appalachian State University, 2006, 2007
+\end{itemize}
+
+\section{\bf Recent and Ongoing Collaborations}
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+\body\\
+\end{format}
+
+
+\title{Identifying and Presenting Salient Motion in Video Streams}
+\employer{Dr. Khai Truong}
+\location{University of Toronto}
+\dates{August, 2011 to present}
+\begin{position}
+Our research investigates methods to detect and display salient, repeated motion events to users.
+\end{position}
+
+
+\title{Urban Mobility for Visually Impaired Pedestrians}
+\employer{Dr. Khai Truong}
+\location{University of Toronto}
+\dates{August, 2011 to present}
+\begin{position}
+This project investigated the information needs of visually impaired pedestrians when crossing urban intersections. Current work involves using Computer Vision to annotate an urban environment in real-time and offline settings.
+\end{position}
+
+\title{Research Assistant}
+\employer{Dr. Carl Langefeld}
+\location{Wake Forest University Baptist Medical College Dept. of Biostatistics}
+\dates{August, 2008 to present}
+\begin{position}
+Developing the computational tools necessary to consider genome-wide datasets.  In particular, data mining and aggregation software utilizing online databases.
+\end{position}
+
+\title{PERIODIC}
+\employer{Dr. Robert Plemmons}
+\location{Wake Forest University Departments of Mathematics and Computer Science}
+\dates{April 2008 to May 2009}
+\begin{position}
+Applied super-resolution imaging techniques to multi-lenslet imaging systems.
+\end{position}
+
+%---------------------------------------------------------------------------
+
+\section{\bf Teaching Experience}
+
+\begin{itemize}
+\item Teaching Assistant, CSC 336 (Numerical Methods), University of Toronto, Fall 2010, 2011, Spring 2012
+\item Teaching Assistant, CSC 373 (Algorithm Design and Analysis), University of Toronto, Summer 2011
+\item Teaching Assistant, Math 112, Wake Forest University, Fall 2007, Spring 2008
+\item Teaching Assistant, ``Utopian Societies," (Interdisciplinary Course), Appalachian State University, Fall 2005
+\item Teaching Assistant, ``Generations," (Introductory History Course), Appalachian State University, Fall 2004
+\end{itemize}
+
+%------------------------------------------------------------------------------
+
+\section{\bf Employment}
+%
+ \begin{format}
+ \employer{l}\location{r}\\
+ \title{l}\dates{r}\\
+ \body\\
+ \end{format}
+%
+
+ \title{Chief Technology Officer}
+ \employer{1LineKeyboard Inc.}
+ \location{Toronto, ON}
+ \dates{January 2012 to present}
+ \begin{position}
+  This startup from the Truong lab is focused on commercializing the 1LineKeyboard [ref] on the Android Market. My primary role has been on back-end programming, with special attention paid to developing and optimizing the word disambiguation system. 
+ \end{position}
+
+ \title{Programmer}
+ \employer{Wave Accounting}
+ \location{Toronto, ON}
+ \dates{March 2012 to present}
+ \begin{position}
+   Develop a django-based small business accounting software suite. 
+ \end{position}
+
+ \title{Mathematical Specialist}
+ \employer{Dynasoft, LLC}
+ \location{Blacksburg, VA}
+ \dates{2007-2009}
+ \begin{position}
+    Develop and test an engineering software package that performs one step Value Stream Mapping.
+ \end{position}
+
+%------------------------------------------------------------------------------
+
+%%===========================================================================%%
+%\newpage
+%\opening
+
+\section{\bf Publications}
+
+[12] F. Li, R.T. Guy, K. Yatani, K.N. Truong ``The 1line keyboard: a QWERTY layout in a single line" in UIST '11 Proceedings of the 24th annual ACM symposium on User interface software and technology
+
+[11] R.T. Guy, P. Santago, C.D. Langefeld ``Bootstrap Aggregating of Alternating Decision Trees to Detect Sets of SNPs that Associate with Disease" in Genetic Epidemiology (Vol 32, Issue 2, Feb 2012). 
+
+[10] L. Chen, Y. Guoqiang, C.D. Langefeld, D.J. Miller, R.T. Guy, X. Yuan, D. Herrington, and Y. Wang, ``Comparative Analysis of Methods for Detecting Interactive SNPs." BMC Genomics. 2011; 12: 344. 
+
+[9] P.S. Ramos, J.T. Ziegler, M.E. Comeau, A.H. Williams, R.T. Guy, C.J. Lessard, L.A. Criswell, P.M. Gaffney, J.A. Kelly, K.M. Kaufman, R. Zidovetzki, C.O. Jacob, R.P. Kimberly, B.P. Tsao, T.J. Vyse, J.B. Harley, M.E. Alarc\'{o}n-Riquelme, C.D. Langefeld, and K.L. Moser, ``Genetic Analyses of Interferon Pathway-Related Genes Reveals Multiple New Loci Associated with Systemic Lupus Erythematosus (SLE)"  Submitted to Arthritis \& Rheumatism.
+
+%[11] R.T. Guy, W. Wang, M. Marion, P. Ramos, T. Howard, C.D. Langefeld  ``SNPDOC: A Web Based SNP Selection Utility," submitted to BMC Bioinformatics.
+
+%[10] A. Williams, R.T. Guy, C. Langefeld, T. Fingerlin, ``Multiple Imputation Strategies for Haplotype Association Analyses in General Pedigrees" in preparation.
+
+[8] Q. Zhang, R.T. Guy and R.J. Plemmons, ``Matrix Structures and Parallel Algorithms for Image Superresolution Reconstruction," SIAM Journal on Matrix Analysis and Applications (Vol.31, No.4)
+
+[7] K. S. Berenhaut, R. T. Guy and C. L. Barrett, ``Globally asymptotic behavior for minimum difference equations," accepted by the International Journal of Difference Equations.
+
+[6] R. T. Guy, M. Misiurewicz, ``Euler Approximations Can Destroy Unbounded Solutions." PODE 2009 proceedings, a special issue of Fasciculic Mathematici.  Vol 44, No. 1 (2009).
+
+[5] M. Mirotznik, S. Mathews, R. Plemmons, P. Pauca, T. Torgersen, R. Barnard, R.T. Guy, B. Gray, Q. Zhang, J. van der Gracht, C. Peterson, M. Bodnar, S. Prasad, ``A Practical Enhanced-Resolution Integrated Optical-Digital Imaging Camera (PERIODIC)" in Proc. SPIE Conference on Defense Security and Sensing, April, 2009.
+
+[4] K. S. Berenhaut, R. T. Guy, ``Symmetric Functions and Difference Equations with Asymptotically Period-Two Solutions," International Journal of Difference Equations, Vol 4, No. 1. (2009)
+
+[3] K. S. Berenhaut, R. T. Guy, ``Periodicity and boundedness for the integer solutions to a minimum-delay
+difference equation," Journal of Difference Equations and Applications, Vol 16, No. 8.  (2010)
+
+[2] K. S. Berenhaut, R. T. Guy, and N. G. Vish, ``An Optimal Bound for Inverses of Triangular Matrices with Monotone Entries," in press, Journal of Linear and Multi-linear algebra.
+
+[1] K. S. Berenhaut, R. T. Guy, and N. G. Vish, ``A 1-norm bound for inverses of triangular matrices
+with monotone entries," Banach J. Math. Anal. 2, no. 1, 112\{121\}  (2008).
+
+
+%------------------------------------------------------------------------------
+
+\section{\bf Presentations}
+%
+[10] ``Applications of number theory to asymptotic behavior of solutions of difference equations."  Invited Talk at Joint Mathematical Meetings in San Francisco, January, 2010.
+
+[9] ``Some recent results on minimum-delay difference equations" Invited Talk at AMS Regional Meeting at The Pennsylvania State University on October 24, 2009.
+
+[8] ``Periodicities in Composition-Delay Difference Equations," Progress on Difference Equations 2009, Bedlewo, Poland, May, 2009.
+
+[7] ``Challenges and Opportunities in SNP Data Analysis," Math Club lecture, Wake Forest University, April, 2009. 
+
+[6] ``Some new results on Composition-Delay Equations with Asymptotically Periodic Solutions" poster presented at Graduate Research Poster Session, Wake Forest University, April 2009.
+
+[5] ``Symmetric Functions and Difference Equations with Asymptotically Period-Two Solutions" presented January, 2009, Joint Mathematics Meeting (JMM), Washington D.C.
+
+[4] ``The periodic character of some rational difference equations of arbitrary order with truncation (Preliminary report)" presented January, 2008, JMM, San Diego, CA
+
+[3] ``Diagonalization and the Liar" presented April of 2007 at National Conference on Undergraduate Research, Dominican University, San Raphael, CA
+
+[2] ``A Revaluation of Marriage: and the Two Shall Remain Two" presented on Oct 14, 2006 at the Southeastern Undergraduate Philosophy Conference at UNCA, Asheville, NC
+
+[1] ``The Humanist Lemma: A Means of Discourse" presented February of 2006 at the Annual Meeting of the North Carolina Philosophical Society, Columbia, SC
+
+%---------------------------------------------------------------------------
+
+\section{\bf Publicly Available Software Packages}
+
+[3] VerbalVictor, an iPad and iPhone application that allows speech impared individuals to communicate using fully customizable recordings.  This project was featured in the LATimes, Chicago Tribune, as well as other leading papers.
+
+[2] SNPLASH.  Designed as a comprehensive set of utilities for genome wide association study analysis.  Includes the ability to consider single locus association with a quantitative or binary decision variable, full linkage disequilibrium and haplotype approximation using the EM algorithm, a test for interaction between 2 markers using a binary trait, and support for the Bagged ADTrees algorithm.  Major language: C++. Available at \tt{http://www.github.org/guyrt} 
+
+[1] SNPdoc: A Web Based SNP selection utility.  Aggregates useful biological and statistical information to aid in SNP selection in genome wide association studies.  Web access available at (https://wakegen.phs.wfubmc.edu/public/snpdoc/index.cfm).  Download access available at \\ (http://www.phs.wfubmc.edu/public/bios/gene/downloads.cfm).  Major languages: Perl, SQL. Utilizes publicly available data access APIs from the UCSC Genome Project, NCBI, and Ensembl.
+
+\section{\bf Service}
+
+\begin{itemize}
+\item Organized and taught a 2-week workshop called the Advanced School for Scientific Developement at the International Center for Theoretical Physics, Trieste, Italy. February, 2012.
+\item Organized and taught Software Carpentry 2-day workshop in Toronto, Ontario, November 2011.
+\item Co-leader of the graduate student visit day at the University of Toronto, March 2011. 
+\item At Large Member (Leadership position) in the Computer Science Graduate Student Benevolent Society (CSGSBS), Dept. of Computer Science, University of Toronto.
+\item Chair of session ``Contributed Papers in Difference and Functional Equations" at JMM 2009, Washington D.C.
+\item Chair of session ``Contributed Papers in Difference and Functional Equations" at JMM 2009, Washington D.C.
+\item Graduate President, Pi Mu Epsilon, Wake Forest University, 2008-2009
+\item Senator, Student Government Association, Appalachian State University, 2005-2006
+\end{itemize}
+
+%%---------------------------------------------------------------------------%%
+
+
+
+%%---------------------------------------------------------------------------%%
+
+\section{\bf Academic Organizations}
+
+\begin{itemize}
+\item Association for Computing Machinery
+\item International Society for Difference Equations (Sponsoring member)
+\item American Mathematical Society
+\item Society for Industrial and Applied Mathematics
+\end{itemize}
+
+%\section{\bf Computing Languages and Platforms }
+
+%Fluent: C, C++, Perl, Matlab, \LaTeX, Visual Basic
+
+%Competent:  Java, R, SQL, Maple, ObjC
+
+%Familiar: SAS, Bash Shell Script, HTML, CSS, XML
+
+\end{resume}
+
+\end{document}
+
+%%===========================================================================%%
